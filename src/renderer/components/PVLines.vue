@@ -139,6 +139,7 @@ export default {
 <style scoped>
 .pv-lines {
   background-color: var(--second-bg-color);
+  border: 1px solid var(--main-border-color);
   font-weight: 100;
   white-space: nowrap;
 }
@@ -166,7 +167,7 @@ export default {
   cursor: pointer;
 }
 .item.clickable:hover {
-  background-color: #2196F3;
+  background-color: var(--dark-highlight-color);
 }
 .item > .left {
   margin-right: 5px;
@@ -184,6 +185,7 @@ export default {
 }
 
 .details {
+  border-top: 1px solid var(--main-border-color);
   font-size: 8pt;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   font-style: oblique;

@@ -290,6 +290,7 @@ input[type=number]::-webkit-inner-spin-button {
   width: 100%;
   background-color: var(--second-bg-color);
   color: var(--main-text-color);
+  border: 1px solid var(--main-border-color);
 }
 
 .btn {
@@ -301,14 +302,14 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .btn.green {
   color: white;
-  background-color: #4aae9b;
+  background-color: var(--save-btn-color);
 }
 .btn.green:hover {
   background-color: #3c8577;
 }
 .btn.red {
   color: white;
-  background-color: #b22222;
+  background-color: var(--cancel-btn-color);
 }
 .btn.red:hover {
   background-color: #8b1919;

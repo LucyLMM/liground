@@ -81,7 +81,7 @@ export default {
   padding-left: 5px;
 }
 .reset:hover {
-  background-color: #22303d;
+  background-color: var(--hover-color);
   cursor:pointer;
 }
 .ceval {
