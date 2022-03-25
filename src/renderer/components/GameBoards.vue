@@ -121,7 +121,7 @@
             class="tab"
             :class="{ visible: !viewAnalysis && viewSettings }"
           />
-           <TournamentView
+          <TournamentView
             id="tournamentview"
             class="tab"
             :class="{ visible: !viewAnalysis && viewTournament }"

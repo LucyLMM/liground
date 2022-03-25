@@ -131,7 +131,7 @@ export default {
       }
       return null
     },
-    ...mapGetters(['moves', 'fen', 'multipv', 'engineSettings', 'mainFirstMove', 'PvE','Tournament', 'active', 'turn', 'enginetime', 'PvEValue','TournamentValue', 'PvEParam','TournamentParam', 'PvEInput','TournamentInput', 'nodes', 'depth', 'seldepth'])
+    ...mapGetters(['moves', 'fen', 'multipv', 'engineSettings', 'mainFirstMove', 'PvE', 'Tournament', 'active', 'turn', 'enginetime', 'PvEValue', 'TournamentValue', 'PvEParam', 'TournamentParam', 'PvEInput', 'TournamentInput', 'nodes', 'depth', 'seldepth'])
   },
   watch: {
     pvcount () {
@@ -173,7 +173,6 @@ export default {
         }
       }
       if (this.active && this.Tournament && !this.turn) {
-        console.log("ENGINE TIME SET TOURNAMENT")
         if (this.TournamentValue === 'time') {
           if (this.enginetime >= this.TournamentInput) {
             if (this.lines[0] != null) {

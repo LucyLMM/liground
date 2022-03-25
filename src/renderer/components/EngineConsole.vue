@@ -506,7 +506,7 @@ export default {
         if (this.enginetime === 0 && this.engineIndex !== 1) {
           this.startClock()
         }
-        if (this.PvE && this.engineIndex === 1 || this.Tournament && this.engineIndex === 1) {
+        if ((this.PvE && this.engineIndex === 1) || (this.Tournament && this.engineIndex === 1)) {
           this.$store.dispatch('setActiveTrue')
         } else {
           if (this.engineIndex < 2) {

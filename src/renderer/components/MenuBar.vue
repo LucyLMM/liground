@@ -40,7 +40,7 @@
       :class="{ active: !viewAnalysis && !viewSettings }"
       @click="changeTabTournament"
     >
-     Tournament Client
+      Tournament Client
     </div>
   </div>
 </template>
@@ -80,8 +80,8 @@ export default {
       this.$store.commit('viewSettings', !this.viewSettings)
     },
     changeTabTournament () {
-        this.$store.commit('viewAnalysis', !this.viewAnalysis)
-        this.$store.commit('viewTournament', !this.viewTournament)
+      this.$store.commit('viewAnalysis', !this.viewAnalysis)
+      this.$store.commit('viewTournament', !this.viewTournament)
     },
     openPgn () { // TODO: seperate the openPgn Funktions from here and AddPgnModal and import instead
       this.$electron.remote.dialog.showOpenDialog({

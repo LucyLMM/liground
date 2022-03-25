@@ -20,7 +20,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['active', 'PvE','Tournament', 'turn'])
+    ...mapGetters(['active', 'PvE', 'Tournament', 'turn'])
   },
   watch: {
     active () {
@@ -37,7 +37,7 @@ export default {
       this.engineActive = payload
     },
     onClick () {
-      console.log("active")
+      console.log('active')
       if (!this.active) {
         this.$store.dispatch('position')
         if (this.PvE || this.Tournament) {

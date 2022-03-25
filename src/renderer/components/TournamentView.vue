@@ -4,14 +4,20 @@
       @resetMultiEngine="resetEngines"
       @updateVariant="removeAllEngines"
     />
-    <div class="analysis" v-if="engineSet == true">
-    <AnalysisContainer
-      v-for="engine in Engines"
-      ref="analysiscontainer"
-      :key="engine.number"
-    />
+    <div
+      v-if="engineSet === true"
+      class="analysis"
+    >
+      <AnalysisContainer
+        v-for="engine in Engines"
+        ref="analysiscontainer"
+        :key="engine.number"
+      />
     </div>
-    <div class="b" v-if="engineSet == false">
+    <div
+      v-if="engineSet === false"
+      class="b"
+    >
       <button
         class="buttonBlue"
         @click="setEngines"
@@ -40,7 +46,7 @@ export default {
         }
       ],
       counter: 1,
-      engineSet: false,
+      engineSet: false
     }
   },
   methods: {
@@ -58,7 +64,7 @@ export default {
         this.$refs.analysiscontainer[i].resetThisEngine()
       }
     },
-    setEngines (){
+    setEngines () {
       this.counter++
       this.Engines.push({ Engine: this.counter })
       this.engineSet = true
